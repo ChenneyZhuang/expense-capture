@@ -28,6 +28,13 @@ Expense entry has one expensive failure mode: **invention**. A misread total, a 
 3. Re-verify flagged fields against the image once more before submitting; a flag that cannot be resolved stays a flag for the user.
 4. Ledger writes happen after approval, in the ledger's own format — and a row that fails to write is reported, not retried blind (blind retries create duplicates).
 
+## Honest limitations / 如实说明局限
+
+- Image recognition is the bottleneck: illegible receipts stay flagged, and flags need human eyes.
+- Tax rules differ by jurisdiction; the skill reads what is printed and never computes what should be there — tax advice stays with the accountant.
+
+图片识别是瓶颈：看不清的收据保持标注，标注需要人来解。各地税务规则不同——skill 只读打印出来的，绝不计算"应该有"的；税务问题归会计。
+
 ## Install / 安装
 
 ```bash

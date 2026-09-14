@@ -1,0 +1,5 @@
+# private working files
+handoff.md
+runs/
+.DS_Store
+*.log

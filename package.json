@@ -1,0 +1,15 @@
+{
+  "name": "expense-capture",
+  "version": "0.1.0",
+  "description": "Turn receipts and invoices into ledger-ready expense rows without invention: every field (date, merchant, amount, currency, tax) traces to the source image, unclear fields are flagged not guessed, currency and tax treatment are stated, and the batch ends with a reconciliation of count and total against the sources.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenneyZhuang/expense-capture.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

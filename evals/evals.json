@@ -1,0 +1,23 @@
+{
+  "skill_name": "expense-capture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我刚出差回来，一沓收据，帮我记账并整理好",
+      "expected_output": "Each receipt captured with amount, currency, purchase-date rate if foreign, category, and readability flags annotated at capture time; unresolved personal/business items marked, not guessed.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "process the receipts in ~/Downloads/receipts/ for this month's report",
+      "expected_output": "A processed ledger with per-receipt evidence (what was read, what was flagged), currency conversions with rate dates, and unresolved items listed rather than silently assigned.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "这顿饭算商务还是私人？先记下来再说",
+      "expected_output": "The expense recorded with the ambiguity flagged and a default per the skill's rules — not silently categorized.",
+      "files": []
+    }
+  ]
+}

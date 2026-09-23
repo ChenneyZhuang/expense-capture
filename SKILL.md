@@ -18,6 +18,10 @@ metadata:
 
 # Expense Capture: transcribe, flag, reconcile
 
+## When to use
+
+Use at the moment of spending or just after: receipts, invoices, subscriptions, travel costs. Use before reconciliation deadlines. Not for accounting system migration or tax filing (hand those to an accountant).
+
 The expensive failure in expense entry is invention — a misread total, a
 guessed merchant, a tax assumed from a subtotal. Every field traces to the
 source, or it is flagged.
@@ -67,3 +71,9 @@ source, or it is flagged.
 Every row traces to a source image, zero fields were invented, the batch
 reconciles on count and total, flags were surfaced rather than guessed
 through, and approved rows are verified in the ledger.
+
+## Gotchas / 常见坑
+
+- Faint receipts degrade immediately: annotate unreadable fields at capture time, not at reconciliation.
+- Currency conversions need the rate's date — the purchase-day rate, not the reconciliation-day rate.
+- Personal-vs-business ambiguity resolved weeks later is unresolvable; mark it at capture.
